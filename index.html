@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Countdown</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <style>
+        .center-element{
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+        overflow-y: hidden;
+        overflow-x: hidden;
+        }
+
+
+        h3{
+            font-family: 'Roboto', sans-serif;
+            font-size: 45px;
+            font-weight: 700;
+            color: rgb(53, 53, 53);
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-bottom: 25px;
+            text-align: center;
+        }
+
+        .h4-text{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 80px;
+            color: rgb(29, 27, 27);
+            margin-top: 0px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<div class="center-element">
+<div class="h4-text"><span id="days">00</span>:<span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+</div>
+</body>
+<script src="index.js"></script>
+</html>
