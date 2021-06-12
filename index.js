@@ -63,8 +63,14 @@ function convertUnixTimetoArray (UnixTime) {
     }
 
     seconds = remainingTime;
-
-    return [days, hours, minutes, seconds];
+    
+    let arrayOfTimeInfo = [days, hours, minutes, seconds];
+    for (x of arrayOfTimeInfo) {
+        if (x.toString().length == 1){
+            arrayOfTimeInfo[arrayOfTimeInfo.indexOf(x)] = "0" + x;
+        }
+    }
+    return arrayOfTimeInfo;
 }
 
 function updateCountdown() {
