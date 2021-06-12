@@ -10,7 +10,7 @@ let currentTimeInSeconds;
 let countdownOver;
 
 // This should be in UTC
-const unixTimeOnFinalDate = 1624532400;
+const unixTimeOnFinalDate = 1624546800;
 
 function initialize(){
     let currentTimeInMilliseconds = Date.now();
