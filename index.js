@@ -30,6 +30,7 @@ function convertUnixTimetoArray (UnixTime) {
 
     // 1 day = 86400 seconds
     let remainingTime = UnixTime;
+    days = 0;
     if (UnixTime > 86400) {
         i = 0;
         while (remainingTime > 0) {
@@ -41,6 +42,7 @@ function convertUnixTimetoArray (UnixTime) {
     }
 
     // 1 hour = 3600 seconds
+    hours = 0;
     if (UnixTime > 3600) {
         i = 0;
         while (remainingTime > 0) {
@@ -52,6 +54,7 @@ function convertUnixTimetoArray (UnixTime) {
     }
 
     // 1 minute = 60 seconds
+    minutes = 0;
     if (UnixTime > 60) {
         i = 0;
         while (remainingTime > 0) {
@@ -61,7 +64,7 @@ function convertUnixTimetoArray (UnixTime) {
         remainingTime += 60;
         minutes = i - 1;
     }
-
+    
     seconds = remainingTime;
     
     let arrayOfTimeInfo = [days, hours, minutes, seconds];
