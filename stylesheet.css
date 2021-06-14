@@ -49,6 +49,28 @@ h3{
     background-color: rgba(177, 204, 255, 0.790);
 }
 
+.container:hover{
+    animation-name: enlargeContainer;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.container:not(:hover){
+    animation-name: unenlargeContainer;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes enlargeContainer {
+    from {padding: 13px 18px;}
+    to {padding: 26px 36px;}
+}
+
+@keyframes unenlargeContainer {
+    from {padding: 26px 36px;}
+    to {padding: 13px 18px;}
+}
+
 .small_marker_text{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
