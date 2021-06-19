@@ -11,8 +11,9 @@ body {
     overflow-y: hidden;
     overflow-x: hidden;
     /* background: linear-gradient(to bottom right, rgb(100, 3, 255), rgb(183, 0, 255)); */
-    background: linear-gradient(to bottom right, rgb(0, 170, 71), rgb(0, 98, 255));
-    background-repeat: no-repeat;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255));
+    background-size: 800%;
+    background-position: right;
     background-attachment: fixed;
     user-select: none;
 }
