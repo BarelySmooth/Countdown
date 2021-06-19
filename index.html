@@ -11,6 +11,10 @@
 
 <body>
 <div class="center-element">
+<div id="header-notice">
+    <span id="header-notice-text">This boring background will be replaced by something better one hour before the Event 😛 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+    <span id="header-notice-close" onclick="hideNotice()">×</span>
+</div>
 <div class="h4-text">
     <div class="container">
         <span id="days">00</span>
@@ -31,4 +35,10 @@
 </div>
 </body>
 <script src="index.js"></script>
+<script>
+    function hideNotice(){
+    const header = document.getElementById("header-notice");
+    header.style = "display: none;";
+}
+</script>
 </html>
