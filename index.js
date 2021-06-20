@@ -87,4 +87,6 @@ function updateCountdown() {
 }
 
 initialize();
+
+// serinterval manages this. Hence it loops
 updateCountdown();
