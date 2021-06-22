@@ -12,6 +12,7 @@
 #header-notice-text {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    user-select: text;
     
 }
 
@@ -23,6 +24,10 @@
     text-align: center;
     font-size: 20px;
     margin-right: -10px;
+}
+
+#extra-spaces {
+    user-select: none;
 }
 
 .center-element{
