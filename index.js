@@ -21,7 +21,6 @@ function initialize(){
     }
     else {
         countdownOver = true;
-        // TODO: Add code here to replace the text and say: Countdown Over!
     }
 }
 
@@ -87,6 +86,10 @@ function updateCountdown() {
 
     if (daysLabel.innerText == 0 && hoursLabel.innerText == 0 && minutesLabel.innerText == 0 && secondsLabel.innerText <= 0){
         clearInterval(waitOneSecond);
+        daysLabel.innerHTML = '00';
+        hoursLabel.innerHTML = '00';
+        minutesLabel.innerHTML = '00';
+        secondsLabel.innerHTML = '00';
     }
 }
 
