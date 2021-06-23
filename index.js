@@ -83,7 +83,11 @@ function updateCountdown() {
     daysLabel.innerHTML = convertUnixTimetoArray(timeDifference)[0];
     hoursLabel.innerHTML = convertUnixTimetoArray(timeDifference)[1];
     minutesLabel.innerHTML = convertUnixTimetoArray(timeDifference)[2];
-    secondsLabel.innerHTML = convertUnixTimetoArray(timeDifference)[3];    
+    secondsLabel.innerHTML = convertUnixTimetoArray(timeDifference)[3];
+
+    if (daysLabel.innerText == 0 && hoursLabel.innerText == 0 && minutesLabel.innerText == 0 && secondsLabel.innerText <= 0){
+        clearInterval(waitOneSecond);
+    }
 }
 
 initialize();
