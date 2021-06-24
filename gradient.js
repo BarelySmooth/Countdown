@@ -30,6 +30,11 @@ function checkForCheckpointForGradient() {
 
         const header = document.getElementById("header-notice");
         header.style = "display: none;";
+        
+        document.getElementsByClassName('container')[0].style = `background-color: rgba(235, 243, 255, 0.425);`;
+        document.getElementsByClassName('container')[1].style = `background-color: rgba(235, 243, 255, 0.425);`;
+        document.getElementsByClassName('container')[2].style = `background-color: rgba(235, 243, 255, 0.425);`;
+        document.getElementsByClassName('container')[3].style = `background-color: rgba(235, 243, 255, 0.425);`;
 
         clearInterval(waitOneSecondForGradient);
     }
