@@ -23,7 +23,7 @@ function checkForCheckpointForGradient() {
         rgb(255, 0, 128)
         );
         animation-name: Background-Gradient;
-        animation-duration: 400s;
+        animation-duration: 200s;
         animation-direction: alternate;
         animation-iteration-count: infinite;
         background-attachment: fixed;`
