@@ -97,13 +97,14 @@ function updateCountdown() {
     secondsLabel.innerHTML = "00";
   }
 
-  if (countdownOver != true) {
-    element = document.getElementById("create-countdown-link").style.display =
-      "none";
-  } else {
-    element = document.getElementById("create-countdown-link").style.display =
-      "block";
-  }
+  // TODO: Commenting out unitl I fully implement this feature
+  // if (countdownOver != true) {
+  //   element = document.getElementById("create-countdown-link").style.display =
+  //     "none";
+  // } else {
+  //   element = document.getElementById("create-countdown-link").style.display =
+  //     "block";
+  // }
 }
 
 initialize();
