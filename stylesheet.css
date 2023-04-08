@@ -47,6 +47,17 @@
   }
 }
 
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+  #header-notice {
+    background: rgb(255, 94, 0);
+  }
+
+  body {
+    background-color: rgb(29, 27, 27);
+  }
+}
+
 #extra-spaces {
   user-select: none;
 }
